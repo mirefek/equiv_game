@@ -1,6 +1,6 @@
 # Equivalence game
 
-This is a toy for playing with the following math problem: Given a finite set X, construct G -- as small as possible set of equivalence relations on X such that any other equivalence relation on X can be generated from X using the lattice operations: intersection (refinement), and join (transitive closure of union)
+This is a toy for playing with the following math problem: Given a finite set X, construct G -- as small as possible set of equivalence relations on X such that any other equivalence relation on X can be generated from G using the lattice operations: intersection (refinement), and join (transitive closure of union)
 
 Run:
 ```
