@@ -267,7 +267,7 @@ class EquivalencesGUI(Gtk.Window):
                 )
                 generators = list(self.equiv_list.get_generators())
                 num_gen = len(generators)
-                dialog.format_secondary_text(f"You solved the challenges using {num_gen} generators. Could there be a better solution?")
+                dialog.format_secondary_text(f"You solved the challenges using {num_gen} generators.\nCould there be a better solution?\nNext time, the current generators will be used for challenges.")
                 dialog.run()
                 dialog.destroy()
                 self.last_verified = generators
