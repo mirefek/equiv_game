@@ -11,7 +11,6 @@ import json
 
 from gui_tool import EditTool, GenerateTool
 from fin_equiv import FinEquiv, bell_number
-from solutions import *
 from gui_eq_list import EquivList
 
 class EquivalencesGUI(Gtk.Window):
