@@ -277,11 +277,13 @@ class EquivalencesGUI(Gtk.Window):
             self.was_solved = True
             return False
         self.cur_challenge = self.challenges[self.num_solved]
-        self.check_challenge()
+        self.check_challenge(True)
         return True
-    def check_challenge(self):
+    def check_challenge(self, check_in_saved = False):
         if self.cur_challenge is None: return
-        if self.cur_challenge == self.equivalence:
+        solved = self.cur_challenge == self.equivalence
+        if check_in_saved: solved = solved or self.cur_challenge in self.equiv_list.data_s
+        if solved:
             self.num_solved += 1
             self.cur_challenge = None
             self.start_challenge()
