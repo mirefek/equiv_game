@@ -7,6 +7,8 @@ Run:
 ./equiv_game.py
 ```
 
+![Screenshot](screenshot.png)
+
 ## Dependencies
 + Python3
 + [pyGtk3](https://pygobject.readthedocs.io/en/latest/getting_started.html)
